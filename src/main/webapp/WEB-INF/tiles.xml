@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/views/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="url" value=""></put-attribute>
+	</definition>
+
+	<definition name="createMachine" extends="base.definition">
+		<put-attribute name="title" value="Thêm máy"></put-attribute>
+		<put-attribute name="body"
+			value="/views/createMachine.jsp"></put-attribute>
+		<put-attribute name="url" value="createMachine"></put-attribute>
+	</definition>
+	<definition name="updateMachine" extends="base.definition">
+		<put-attribute name="title" value="Chỉnh sửa máy"></put-attribute>
+		<put-attribute name="body"
+			value="/views/updateMachine.jsp"></put-attribute>
+		<put-attribute name="url" value="updateMachine"></put-attribute>
+	</definition>
+	<definition name="readMachine" extends="base.definition">
+		<put-attribute name="title" value="Danh sách máy"></put-attribute>
+		<put-attribute name="body"
+			value="/views/readMachine.jsp"/>
+		<put-attribute name="url" value="readMachine"></put-attribute>
+	</definition>
+
+	<definition name="createCustomer" extends="base.definition">
+		<put-attribute name="title" value="Thêm khách hàng"></put-attribute>
+		<put-attribute name="body"
+			value="/views/createCustomer.jsp"></put-attribute>
+		<put-attribute name="url" value="createCustomer"></put-attribute>
+	</definition>
+	
+	<definition name="updateCustomer" extends="base.definition">
+		<put-attribute name="title" value="Chỉnh sửa khách hàng"></put-attribute>
+		<put-attribute name="body"
+			value="/views/updateCustomer.jsp"></put-attribute>
+		<put-attribute name="url" value="updateCustomer"></put-attribute>
+	</definition>
+	
+	<definition name="readCustomer" extends="base.definition">
+		<put-attribute name="title" value="Danh sách khách hàng"></put-attribute>
+		<put-attribute name="body"
+			value="/views/readCustomer.jsp"/>
+		<put-attribute name="url" value="readCustomer"></put-attribute>
+	</definition>
+	
+	<definition name="createService" extends="base.definition">
+		<put-attribute name="title" value="Thêm dịch vụ"></put-attribute>
+		<put-attribute name="body"
+			value="/views/createService.jsp"></put-attribute>
+		<put-attribute name="url" value="createService"></put-attribute>
+	</definition>
+	<definition name="updateService" extends="base.definition">
+		<put-attribute name="title" value="Chỉnh sửa dịch vụ"></put-attribute>
+		<put-attribute name="body"
+			value="/views/updateService.jsp"></put-attribute>
+		<put-attribute name="url" value="updateService"></put-attribute>
+	</definition>
+	<definition name="readService" extends="base.definition">
+		<put-attribute name="title" value="Danh sách dịch vụ"></put-attribute>
+		<put-attribute name="body"
+			value="/views/readService.jsp"/>
+		<put-attribute name="url" value="readService"></put-attribute>
+	</definition>
+	
+	<definition name="dkSuDungMay" extends="base.definition">
+		<put-attribute name="title" value="Đăng kí sử dụng máy"></put-attribute>
+		<put-attribute name="body"
+			value="/views/dkSuDungMay.jsp"/>
+		<put-attribute name="url" value="dkSuDungMay"></put-attribute>
+	</definition>
+	
+	<definition name="dkSuDungDV" extends="base.definition">
+		<put-attribute name="title" value="Đăng kí sử dụng dịch vụ"></put-attribute>
+		<put-attribute name="body"
+			value="/views/dkSuDungDV.jsp"/>
+		<put-attribute name="url" value="dkSuDungDV"></put-attribute>
+	</definition>
+	
+	<definition name="info" extends="base.definition">
+		<put-attribute name="title" value="Thông tin"></put-attribute>
+		<put-attribute name="body"
+			value="/views/info.jsp"/>
+		<put-attribute name="url" value="info"></put-attribute>
+	</definition>
+</tiles-definitions>  
